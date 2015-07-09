@@ -25,7 +25,9 @@ public:
 	virtual void onExit();
 	virtual void onExitTransitionDidStart();
 	virtual void cleanup();
-
+	virtual bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
+	virtual void onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
+	virtual void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
 	virtual void setNinjaPosition(cocos2d::Vec2 position);
 
 	void setViewCentrePoint(cocos2d::Vec2 position);
